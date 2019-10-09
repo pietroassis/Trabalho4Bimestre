@@ -32,7 +32,14 @@ public class Mock {
          admin.setNome("Administrador");
          lista.add(admin);
 
+         Usuario gerente = new Usuario();
+         gerente.setEmail("gerente@ifpr.edu.br");
+         gerente.setSenha("umadificilai");
+         gerente.setNome("Gerente");
+         lista.add(gerente);
+
       }
+
    }
 
    private static void createProducts(){
@@ -44,6 +51,7 @@ public class Mock {
             caneta.setDescricao("Caneta Bic");
             caneta.setPreco(1.5f);
             caneta.setOferta(true);
+            caneta.setPathImagem("http://www.bavatos.com.br/content/images/thumbs/0001016_caneta-esf-cristal-azul-bic_580.jpeg");
             lista.add(caneta);
 
             Produto caderno = new Produto();
