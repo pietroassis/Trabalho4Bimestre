@@ -34,7 +34,7 @@ public class Login extends HttpServlet {
         String senha = request.getParameter("senha");
 
         //comparar com os dado de login default
-        if(Usuario.login(email, senha)){
+        if(!Usuario.login(email, senha)){
            //redirecionar para a tela de login
            response.sendRedirect("login.jsp");
         }else{

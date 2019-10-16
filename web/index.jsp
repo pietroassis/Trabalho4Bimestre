@@ -4,8 +4,8 @@
     Author     : gutol
 --%>
 
-<%@page import="modelos.Produto"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,25 +20,21 @@
             <jsp:param name="item" value="ofertas" />
         </jsp:include>
 
+       <jsp:useBean id="Produtos" class="modelos.Produto"/>
+
         <div class="container">
             <h1>Ofertas da Loja!</h1>
 
             <div class="ofertas">
-            <%
-                for(int i=0; i<Produto.getLista().size(); i++){
-                    Produto p = Produto.getLista().get(i);
+               <c:forEach var="p" items="${Produtos.lista}">
+                  <c:if test="${p.oferta}">
+                  <div class="table">
+                     <h5>${p.descricao}</h5>
+                     <p>${p.preco}</p>
 
-                    if(p.isOferta()){
-                    %>
-                        <div>
-                            <h5> <%= p.getDescricao()%> </h5>
-                            <p>  <%= p.getPreco()%> </p>
-                            <img src="<%p.getPathImagem();%>"></img>
-                        </div>
-                    <%
-                    }
-                }
-            %>
+                  </div>
+                     </c:if>
+               </c:forEach>
             </div>
 
         </div>

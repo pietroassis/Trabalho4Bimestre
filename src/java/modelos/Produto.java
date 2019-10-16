@@ -15,14 +15,14 @@ public class Produto {
     private String descricao;
     private float preco;
     private boolean oferta;
-    private String pathImagem;
-    private static ArrayList<Produto> lista = new ArrayList();
+    private String imagem;
+    public static ArrayList<Produto> lista = new ArrayList();
 
-   public String getPathImagem() {
-      return pathImagem;
+   public String geImagem() {
+      return imagem;
    }
-   public void setPathImagem(String pathImagem) {
-      this.pathImagem = pathImagem;
+   public void setImagem(String pathImagem) {
+      this.imagem = imagem;
    }
 
     public String getDescricao(){
@@ -41,15 +41,15 @@ public class Produto {
         this.preco = preco;
     }
 
-    public static ArrayList<Produto> getLista() {
+    public ArrayList<Produto> getLista() {
         return lista;
     }
 
-    public static void setLista(ArrayList<Produto> lista) {
+    public void setLista(ArrayList<Produto> lista) {
         Produto.lista = lista;
     }
 
-    public boolean isOferta() {
+    public boolean getOferta() {
         return oferta;
     }
 

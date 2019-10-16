@@ -37,21 +37,21 @@ public class Mock {
          gerente.setSenha("umadificilai");
          gerente.setNome("Gerente");
          lista.add(gerente);
-
+         
       }
 
    }
 
    private static void createProducts(){
       ArrayList<Produto> lista;
-        if(Produto.getLista() .isEmpty()){
-            lista = Produto.getLista();
+        if(Produto.lista.isEmpty()){
+            lista = Produto.lista;
 
             Produto caneta = new Produto();
             caneta.setDescricao("Caneta Bic");
             caneta.setPreco(1.5f);
             caneta.setOferta(true);
-            caneta.setPathImagem("http://www.bavatos.com.br/content/images/thumbs/0001016_caneta-esf-cristal-azul-bic_580.jpeg");
+            caneta.setImagem("http://www.bavatos.com.br/content/images/thumbs/0001016_caneta-esf-cristal-azul-bic_580.jpeg");
             lista.add(caneta);
 
             Produto caderno = new Produto();
