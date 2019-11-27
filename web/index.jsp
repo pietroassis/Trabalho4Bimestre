@@ -28,9 +28,13 @@
             <div class="ofertas">
                <c:forEach var="p" items="${Produtos.lista}">
                   <c:if test="${p.oferta}">
+                     <a href="produtoBase.jsp?id=${p.id}">
                   <div class="table">
                      <h5>${p.descricao}</h5>
-                     <p>${p.preco}</p>
+                     <p>R$ ${p.preco}</p>
+                     <img class="img-responsive" src="${p.imagem}">
+                     </a>
+
 
                   </div>
                      </c:if>

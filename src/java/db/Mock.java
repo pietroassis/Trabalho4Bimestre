@@ -7,6 +7,7 @@ package db;
 
 import java.util.ArrayList;
 import modelos.Produto;
+import static modelos.Produto.carrinho;
 import modelos.Usuario;
 
 /**
@@ -37,7 +38,7 @@ public class Mock {
          gerente.setSenha("umadificilai");
          gerente.setNome("Gerente");
          lista.add(gerente);
-         
+
       }
 
    }
@@ -47,42 +48,60 @@ public class Mock {
         if(Produto.lista.isEmpty()){
             lista = Produto.lista;
 
-            Produto caneta = new Produto();
-            caneta.setDescricao("Caneta Bic");
-            caneta.setPreco(1.5f);
-            caneta.setOferta(true);
-            caneta.setImagem("http://www.bavatos.com.br/content/images/thumbs/0001016_caneta-esf-cristal-azul-bic_580.jpeg");
-            lista.add(caneta);
+            Produto camisa = new Produto();
+            camisa.setDescricao("Camisa Bayern de Munique ");
+            camisa.setPreco(129.5f);
+            camisa.setOferta(true);
+            camisa.setImagem ("https://www.futimport.com/wp-content/uploads/2019/09/bayern-munique-reserva-2019-2020.jpg");
+            camisa.setPais("Europeu");
+            camisa.setId(1);
+            lista.add(camisa);
 
-            Produto caderno = new Produto();
-            caderno.setDescricao("Caderno");
-            caderno.setPreco(5.5f);
-            caderno.setOferta(true);
-            lista.add(caderno);
+            Produto camisaR = new Produto();
+            camisaR.setDescricao("Camisa Real Madrid");
+            camisaR.setPreco(149.9f);
+            camisaR.setImagem ("https://www.futimport.com/wp-content/uploads/2019/07/real-madrid-reserva_00-600x600.jpg");
+            camisaR.setOferta(true);
+            camisaR.setPais("Europeu");
+            camisaR.setId(2);
+            lista.add(camisaR);
 
-            Produto caneca = new Produto();
-            caneca.setDescricao("Caneca");
-            caneca.setPreco(10.0f);
-            caneca.setOferta(false);
-            lista.add(caneca);
+            Produto camisaL = new Produto();
+            camisaL.setDescricao("Camisa Liverpool - Campeão Mundial 2019");
+            camisaL.setPreco(189.0f);
+            camisaL.setImagem("https://www.futimport.com/wp-content/uploads/2019/06/liverpool-titular_00.jpeg");
+            camisaL.setOferta(true);
+            camisaL.setPais("Europeu");
+            camisaL.setId(3);
+            lista.add(camisaL);
 
-            Produto lapis = new Produto();
-            lapis.setDescricao("Lapis");
-            lapis.setPreco(1.0f);
-            lapis.setOferta(false);
-            lista.add(lapis);
+            Produto camisaC = new Produto();
+            camisaC.setDescricao("Camisa Corinthians");
+            camisaC.setPreco(109.0f);
+            camisaC.setOferta(false);
+            camisaC.setPais("Brasileiro");
+            camisaC.setId(4);
+            camisaC.setImagem("https://www.futimport.com/wp-content/uploads/2019/06/corinthians-titular_00.jpg");
+            lista.add(camisaC);
 
-            Produto borracha = new Produto();
-            borracha.setDescricao("Borracha");
-            borracha.setPreco(1.5f);
-            borracha.setOferta(false);
-            lista.add(borracha);
+            Produto camisaA = new Produto();
+            camisaA.setDescricao("Camisa Athletico Paranaense");
+            camisaA.setPreco(125.5f);
+            camisaA.setOferta(false);
+            camisaA.setPais("Brasileiro");
+            camisaA.setId(5);
+            camisaA.setImagem("https://www.futimport.com/wp-content/uploads/2019/06/athletico-titular_00.jpg");
+            lista.add(camisaA);
+            carrinho.add(camisaA);
 
-            Produto sulfite = new Produto();
-            sulfite.setDescricao("Folha Sulfite");
-            sulfite.setPreco(5.0f);
-            sulfite.setOferta(true);
-            lista.add(sulfite);
+            Produto camisaF = new Produto();
+            camisaF.setDescricao("Camisa Flamengo");
+            camisaF.setPreco(138.0f);
+            camisaF.setOferta(false);
+            camisaF.setId(6);
+            camisaF.setPais("Brasileiro");
+            camisaF.setImagem("https://www.futimport.com/wp-content/uploads/2019/06/flamengo-reserva_00.jpg");
+            lista.add(camisaF);
         }
     }
 

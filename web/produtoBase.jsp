@@ -17,10 +17,10 @@
             <jsp:param name="item" value=" " />
         </jsp:include>
         <div class="container">
-        <h1>Nome do Produto</h1>
-        <img src="https://escolaeducacao.com.br/wp-content/uploads/2019/01/o-que-e-url-670x430.png" style="width: 25%; height: 100%;" class="rounded float-left" alt="Desc img">
+        <h1>${p.descricao}</h1>
+        <img src="${p.imagem}" style="width: 25%; height: 100%;" class="rounded float-left" alt="Desc img">
           <p  class="text-right">
-             Descrição do Produto
+             ${p.descricao2}
           </p>
         </div>
    </body>

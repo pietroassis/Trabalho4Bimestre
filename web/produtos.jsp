@@ -45,7 +45,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>#</th>
+                       <th></th>
                         <th>Descrição</th>
                         <th>Valor</th>
                     </tr>

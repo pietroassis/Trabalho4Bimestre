@@ -13,15 +13,20 @@ import java.util.ArrayList;
  */
 public class Produto {
     private String descricao;
+    private String descricao2;
     private float preco;
     private boolean oferta;
     private String imagem;
+    private String pais;
+    private int qtdCarrinho;
+    private int id;
     public static ArrayList<Produto> lista = new ArrayList();
+    public static ArrayList<Produto> carrinho = new ArrayList();
 
-   public String geImagem() {
+   public String getImagem() {
       return imagem;
    }
-   public void setImagem(String pathImagem) {
+   public void setImagem(String imagem) {
       this.imagem = imagem;
    }
 
@@ -56,6 +61,48 @@ public class Produto {
     public void setOferta(boolean oferta) {
         this.oferta = oferta;
     }
+
+   public String getPais() {
+      return pais;
+   }
+
+   public void setPais(String pais) {
+      this.pais = pais;
+   }
+
+   public static ArrayList<Produto> getCarrinho() {
+      return carrinho;
+   }
+
+   public static void setCarrinho(ArrayList<Produto> carrinho) {
+      Produto.carrinho = carrinho;
+   }
+
+   public int getQtdCarrinho() {
+      return qtdCarrinho;
+   }
+
+   public void setQtdCarrinho(int qtdCarrinho) {
+      this.qtdCarrinho = qtdCarrinho;
+   }
+
+   public int getId() {
+      return id;
+   }
+
+   public void setId(int id) {
+      this.id = id;
+   }
+
+   public String getDescricao2() {
+      return descricao2;
+   }
+
+   public void setDescricao2(String descricao2) {
+      this.descricao2 = descricao2;
+   }
+
+   
 
 
 }
