@@ -55,6 +55,7 @@ public class Mock {
             camisa.setImagem ("https://www.futimport.com/wp-content/uploads/2019/09/bayern-munique-reserva-2019-2020.jpg");
             camisa.setPais("Europeu");
             camisa.setId(1);
+            camisa.setDescricao2("Melhor Time do Mundo");
             lista.add(camisa);
 
             Produto camisaR = new Produto();

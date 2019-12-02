@@ -102,7 +102,7 @@ public class Produto {
       this.descricao2 = descricao2;
    }
 
-   
+
 
 
 }
