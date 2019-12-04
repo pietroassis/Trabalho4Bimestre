@@ -41,7 +41,7 @@
             </form>
 
             <% } %>
-
+<a href="produtoBase.jsp?id=${p.id}">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -65,7 +65,7 @@
             %>
                 </tbody>
             </table>
-
+</a>
         </div>
         <script src="js/bootstrap.min.js"></script>
     </body>
