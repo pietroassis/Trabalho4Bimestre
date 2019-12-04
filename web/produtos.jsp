@@ -55,7 +55,7 @@
                 for(int i=0; i<Produto.lista.size(); i++){
 
                     Produto p = Produto.lista.get(i); %>
-<a href="produtoBase.jsp?id="<%  p.getId();%>">
+<a href="produtoBase.jsp?id=<%p.getId();%>">
 
 <%
                     out.println("<tr>");
