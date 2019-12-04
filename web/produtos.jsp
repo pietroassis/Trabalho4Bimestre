@@ -41,7 +41,7 @@
             </form>
 
             <% } %>
-<a href="produtoBase.jsp?id=${p.id}">
+
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -54,7 +54,10 @@
             <%
                 for(int i=0; i<Produto.lista.size(); i++){
 
-                    Produto p = Produto.lista.get(i);
+                    Produto p = Produto.lista.get(i); %>
+<a href="produtoBase.jsp?id="<%  p.getId();%>">
+
+<%
                     out.println("<tr>");
                     out.println("<td> "+ (i+1) +" </td>");
                     out.println("<td> "+ p.getDescricao() +" </td>");
