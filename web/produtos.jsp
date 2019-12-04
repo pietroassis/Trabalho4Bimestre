@@ -63,12 +63,13 @@
                     out.println("<td> "+ p.getDescricao() +" </td>");
                     out.println("<td> "+ p.getPreco() +" </td>");
                     out.println("</tr>");
+%> </a> <%
                 }
 
             %>
                 </tbody>
             </table>
-</a>
+
         </div>
         <script src="js/bootstrap.min.js"></script>
     </body>
